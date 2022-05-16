@@ -1,5 +1,5 @@
 /* Основные свойства */
-:root {
+/* :root {
 	--primary-text-colour: #212121;
 	--title-text-colour: #757575;
 	--accent-colour: #2196f3;
@@ -7,156 +7,19 @@
 	--hero-footer-backcolor: #2f303a;
 	--change-color-button: #188ce8;
 	--transition-cube: cubic-bezier(0.4, 0, 0.2, 1);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
+} */
+
 
 /* Общие стили*/
-body {
-	background-color: var(--page-maintitle-color);
-	color: var(--primary-text-colour);
-	font-family: "Roboto", sans-serif;
-	font-size: 14px;
-	letter-spacing: 0.03em;
-}
-.list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.conteiner {
-	width: 1200px;
-	/* outline: 2px solid tomato; */
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
 
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-.hidden {
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	margin: -1px;
-}
-textarea {
-	resize: none;
-}
+
+
 /*Навигация, логотип верх страницы */
-.header {
-	border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
-.page-navigation {
-	display: flex;
-	align-items: center;
-	border-bottom: none;
-}
-.header-logo {
-	display: block;
-	padding-top: 24px;
-	padding-bottom: 25px;
 
-	transition: color 250ms var(--transition-cube);
 
-	text-decoration: none;
-	color: var(--primary-text-colour);
-	font-family: "Raleway", sans-serif;
-	font-size: 26px;
-	line-height: 1.19;
-}
-.logo-span {
-	color: var(--accent-colour);
-}
-.header-logo:hover,
-.header-logo:focus {
-	color: var(--accent-colour);
-}
-.header-navigation {
-	margin-left: 94px;
-}
-.navigation-list {
-	display: flex;
-}
-.item-nav + .item-nav {
-	margin-left: 50px;
-}
-.link {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	display: block;
-	
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	color: var(--primary-text-colour);
 
-}
-.item-nav .link {
-	position: relative;
-	display: inline-block;
 
-	transition: color 250ms var(--transition-cube);
-}
-.link.current {
-	color: var(--accent-colour);
-}
-.link.current::after {
-	position: absolute;
-	left: 0;
-	bottom: -1px;
 
-	content: "";
-	width: 100%;
-	height: 4px;
-	background-color: rgba(33, 150, 243, 1);
-	border-radius: 2px;
-}
-.header-address {
-	display: flex;
-	margin-left: auto;
-
-	transition: color 250ms var(--transition-cube);
-}
-.item-adr:not(:last-child) {
-	margin-right: 50px;
-}
-.icon-contact {
-	display: flex;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	align-items: center;
-	color: var(--title-text-colour);
-	transition: color 250ms var(--transition-cube);
-}
-.header-icon {
-	margin-right: 10px;
-	fill: currentColor;
-}
-.link:hover,
-.link:focus,
-.header-address .link:hover,
-.header-address .link:focus {
-	color: var(--accent-colour);
-}
 
 /* Главная страница */
 /* Секция герой */
@@ -819,6 +682,7 @@ textarea {
 .item-form textarea {
 	padding: 12px;
 	height: 120px;
+	resize: none;
 }
 .item-form textarea::placeholder {
 	font-weight: 400;
