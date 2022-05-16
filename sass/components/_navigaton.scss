@@ -1,4 +1,5 @@
 .navigation__list {
+	@extend %list;
 	@include centredFlex;
 }
 .navigation__item:not(:last-child) {

@@ -1,4 +1,5 @@
-.contacts {
+.contacts__list {
+	@extend %list;
 	@include centredFlex;
 	margin-left: auto;
 
