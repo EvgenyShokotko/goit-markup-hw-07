@@ -31,7 +31,6 @@ p {
 
 .conteiner {
   width: 1200px;
-  outline: 2px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -124,7 +123,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: .navigation__link primary-text-colour;
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
