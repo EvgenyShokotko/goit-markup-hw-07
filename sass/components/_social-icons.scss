@@ -1,10 +1,12 @@
 .socialicons__list {
 	@extend %list;
 	@include centredFlex($type: flex, $position: flex-start);
+
+	&--direction {
+		@include centredFlex($type: flex, $position: center);
+	}
 }
-.socialicons__list--direction {
-	@include centredFlex($type: flex, $position: center);
-}
+
 .socialicons__item:not(:last-child) {
 	margin-right: 10px;
 }
@@ -24,21 +26,21 @@
 	&:focus {
 		background-color: $accent-colour;
 	}
-}
-.socialicons__link--grey {
-	border: none;
-	box-shadow: none;
-	color: #afb1b8;
+	&--grey {
+		border: none;
+		box-shadow: none;
+		color: #afb1b8;
 
-	transition: color 250ms $transition-cube, background-color 250ms $transition-cube;
-	&:hover,
-	&:focus {
-		color: $page-maintitle-color;
+		transition: color 250ms $transition-cube, background-color 250ms $transition-cube;
+		&:hover,
+		&:focus {
+			color: $page-maintitle-color;
+		}
 	}
 }
 .socialicons__image {
 	fill: $page-maintitle-color;
-}
-.socialicons__image--white {
-	fill: currentColor;
+	&--white {
+		fill: currentColor;
+	}
 }

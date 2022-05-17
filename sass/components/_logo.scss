@@ -1,8 +1,5 @@
 .logo {
-	margin-right: 94px;
 	display: block;
-	padding-top: 24px;
-	padding-bottom: 25px;
 
 	transition: color 250ms $transition-cube;
 
@@ -16,6 +13,15 @@
 	&:focus {
 		color: $accent-colour;
 	}
+}
+.logo--position-top {
+	margin-right: 94px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+.logo--position-bottom {
+	margin-bottom: 20px;
+	color: $page-maintitle-color;
 }
 .logo--blue {
 	color: $accent-colour;
