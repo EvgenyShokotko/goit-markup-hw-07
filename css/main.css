@@ -716,14 +716,17 @@ p {
   margin-right: 70px;
 }
 
+.footer__social-block {
+  margin-right: auto;
+}
+
 .footer__social-bl-title {
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.14;
-  margin: 0;
-  padding: 0;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
 }
@@ -757,12 +760,10 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-left: 93px;
 }
 
 .subscribe-block__title {
   display: block;
-  margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -779,6 +780,7 @@ p {
 }
 
 .subscribe-block__form input {
+  margin-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -788,6 +790,7 @@ p {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #ffffff;
   background-color: #2f303a;
 }
 
@@ -833,7 +836,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
   padding: 10px 28px;
   min-width: 200px;
   font-weight: 700;
@@ -942,7 +944,6 @@ p {
 }
 
 .form__list {
-  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,6 +971,20 @@ p {
 
 .form__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.form__item:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.form__item:nth-child(5) {
+  margin-bottom: 30px;
+}
+
+.form__button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form__label {

@@ -1,6 +1,5 @@
 .form__list {
 	@extend %list;
-	margin-bottom: 30px;
 	@include centredFlex($type: flex, $position: flex-start, $direction: stretch);
 	flex-direction: column;
 }
@@ -8,10 +7,20 @@
 .form__item {
 	display: flex;
 	flex-direction: column;
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&:nth-child(4) {
+		margin-bottom: 20px;
+	}
+	&:nth-child(5) {
+		margin-bottom: 30px;
+	}
 }
-.form__item:not(:last-child) {
-	margin-bottom: 10px;
+.form__button {
+	align-items: center;
 }
+
 .form__label {
 	margin-bottom: 4px;
 
